@@ -1,0 +1,14 @@
+.app-layout {
+   display: flex;
+ }
+
+ .visual-panel {
+   position: sticky;
+   top: 0;
+   height: 100vh;
+ }
+
+ .narrative-panel {
+   min-height: 80vh;
+   margin-bottom: 20vh;
+ }
