@@ -1,6 +1,6 @@
-import type { Ceramic } from '../types/ceramics';
+import type { CeramicType } from '../types/ceramics';
 // review and update the actual data later
-let plastic: Ceramic = {
+let plastic: CeramicType = {
   id: "plastic",
   stageName: "Plastic",
   stageOrder: 1,
@@ -13,7 +13,7 @@ let plastic: Ceramic = {
   blurb: ""
 };
 
-let wedging: Ceramic = {
+let wedging: CeramicType = {
   id: "wedging",
   stageName: "Wedging",
   stageOrder: 2,
@@ -26,7 +26,7 @@ let wedging: Ceramic = {
   blurb: ""
 };
 
-let throwing: Ceramic = {
+let throwing: CeramicType = {
     id: "throwing",
     stageName: "Throwing",
     stageOrder: 3,
@@ -39,7 +39,7 @@ let throwing: Ceramic = {
     blurb: ""
 };
 
-let leatherhard: Ceramic = {
+let leatherhard: CeramicType = {
     id: "leatherhard",
     stageName: "Leatherhard",
     stageOrder: 4,
@@ -52,7 +52,7 @@ let leatherhard: Ceramic = {
     blurb: ""
 };
 
-let drying: Ceramic = {
+let drying: CeramicType = {
     id: "drying",
     stageName: "Drying",
     stageOrder: 5,
@@ -65,7 +65,7 @@ let drying: Ceramic = {
     blurb: ""
 };
 
-let bisque: Ceramic = {
+let bisque: CeramicType = {
     id: "bisque",
     stageName: "Bisque",
     stageOrder: 6,
@@ -78,7 +78,7 @@ let bisque: Ceramic = {
     blurb: ""
 };
 
-let glaze: Ceramic = {
+let glaze: CeramicType = {
     id: "glaze",
     stageName: "Glaze",
     stageOrder: 7,
@@ -91,7 +91,7 @@ let glaze: Ceramic = {
     blurb: ""
 };
 
-let firing: Ceramic = {
+let firing: CeramicType = {
     id: "firing",
     stageName: "Firing",
     stageOrder: 8,
@@ -104,7 +104,7 @@ let firing: Ceramic = {
     blurb: ""
 };
 
-export const phases: Ceramic[] = [
+export const phases: CeramicType[] = [
   plastic,
   wedging,
   throwing,

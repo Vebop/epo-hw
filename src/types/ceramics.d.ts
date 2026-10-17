@@ -1,4 +1,4 @@
-export interface Ceramic {
+export interface CeramicType {
   id: string;
   stageName: string;
   stageOrder: number;
