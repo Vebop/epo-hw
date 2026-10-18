@@ -46,17 +46,19 @@ function App() {
       <div className="visual-panel">
       <CeramicVisual ceramic={activeCeramic} />
       </div>
+
       <div className="narrative-panel">
       {phases.map((phase: CeramicType) => {
+        const scrollHeight = phase.scrollDuration * 90;
         return (
-          // remove on click, how do I set 'active ceramic' based on scroll position?
-          <section className="stage-card" data-stage-id={phase.id} key={phase.id} onClick={() => setActiveCeramic(phase)}>
+          <section className="stage-card" style={{minHeight: `${scrollHeight}vh`}} data-stage-id={phase.id} key={phase.id} onClick={() => setActiveCeramic(phase)}>
             <h3>{phase.stageName}</h3>
             <p>{phase.blurb}</p>
           </section>
         )
       })}
       </div>
+
     </main>
   )
 }
