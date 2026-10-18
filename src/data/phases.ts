@@ -95,7 +95,7 @@ const bisque: CeramicType = {
     phase: "Bisqueware",
     temperature: 1000,
     shrinkage: 10,
-    blurb: "'Bisque' or 'Biscuit' firing is a short, low temperature firing meant to strengthen the piece and remove further water. At this stage any organic materials are burned out, the clay molecules turn into ceramic, and molecularly bound water is driven off."
+    blurb: "(from the French bis-cuit, twice-baked) 'Bisque' or 'Biscuit' firing is a short, low temperature firing meant to strengthen the piece and remove further water. At this stage any organic materials are burned out, the clay molecules turn into ceramic, and molecularly bound water is driven off."
 };
 
 const glaze: CeramicType = {
