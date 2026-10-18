@@ -5,21 +5,25 @@ function CeramicVisual({ceramic}: {ceramic: CeramicType}) {
   return (
     <section className="ceramic-visual">
       <h2>{ceramic.stageName}</h2>
-      <p>Stage Order: {ceramic.stageOrder}</p>
-      <p>Description: {ceramic.description}</p>
-      <p>{ceramic.blurb}</p>
+      <p>{ceramic.description}</p>
       <dl>
-        <dt>Hydration</dt>
-        <dd>{ceramic.hydration}</dd>
-        <dt>Duration</dt>
-        <dd>{ceramic.duration}</dd>
-        <dt>Phase</dt>
+        <dt>Hydration:</dt>
+        <dd>{ceramic.hydration}%
+            <div gauge-track className="hydration-bar" >
+                <div gauge-fill className="hydration-fill" style={{ width: `${ceramic.hydration}%` }}>
+                </div>
+            </div>
+        </dd>
+        <dt>Duration:</dt>
+        <dd>{ceramic.duration} hours</dd>
+        <dt>Phase:</dt>
         <dd>{ceramic.phase}</dd>
-        <dt>Temperature</dt>
-        <dd>{ceramic.temperature}</dd>
-        <dt>Shrinkage</dt>
-        <dd>{ceramic.shrinkage}</dd>
+        <dt>Temperature:</dt>
+        <dd>{ceramic.temperature} °C</dd>
+        <dt>Shrinkage:</dt>
+        <dd>{ceramic.shrinkage}%</dd>
       </dl>
+      <p>{ceramic.blurb}</p>
     </section>
   )
 }
