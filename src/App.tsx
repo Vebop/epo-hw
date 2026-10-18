@@ -51,7 +51,7 @@ function App() {
       {phases.map((phase: CeramicType) => {
         const scrollHeight = phase.scrollDuration * 90;
         return (
-          <section className="stage-card" style={{minHeight: `${scrollHeight}vh`}} data-stage-id={phase.id} key={phase.id} onClick={() => setActiveCeramic(phase)}>
+          <section className="stage-card" tabIndex={0} style={{minHeight: `${scrollHeight}vh`}} data-stage-id={phase.id} key={phase.id} onFocus={() => setActiveCeramic(phase)}onClick={() => setActiveCeramic(phase)}>
             <h3>{phase.stageName}</h3>
             <p>{phase.blurb}</p>
           </section>

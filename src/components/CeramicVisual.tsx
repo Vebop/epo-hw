@@ -13,13 +13,13 @@ function CeramicVisual({ceramic}: {ceramic: CeramicType}) {
     }
 
   return (
-    <section className="ceramic-visual" style={{backgroundColor: temperatureColor, boxShadow: boxShadow}}>
+    <section className="ceramic-visual" style={{backgroundColor: temperatureColor, boxShadow: boxShadow}} aria-live="polite" aria-atomic="true" aria-label="Associated metrics to ceramics' stages">
       <h2>{ceramic.stageName}</h2>
       <p>{ceramic.description}</p>
       <dl>
         <dt>Hydration:</dt>
         <dd>{ceramic.hydration}%
-            <div gauge-track className="hydration-bar" >
+            <div gauge-track className="hydration-bar" aria-hidden="true" >
                 <div gauge-fill className="hydration-fill" style={{ width: `${ceramic.hydration}%` }}>
                 </div>
             </div>
@@ -32,7 +32,7 @@ function CeramicVisual({ceramic}: {ceramic: CeramicType}) {
         <dd>{ceramic.temperature} °C</dd>
         <dt>Shrinkage:</dt>
         <dd>{ceramic.shrinkage}%
-            <div shrink-track className="shrinkage-icon">
+            <div shrink-track className="shrinkage-icon" aria-hidden="true">
                 <div shrunk-fill className="shrinkage-fill" style={{transform: `scale(${(100-ceramic.shrinkage)/100})`}}>
                 </div>
              </div>

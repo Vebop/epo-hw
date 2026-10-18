@@ -59,6 +59,10 @@
    justify-content: center;
  }
 
+ .stage-card:focus-visible {
+  outline:white;
+ }
+
  .ceramic-visual {
     padding: 2rem;
     color:white;
