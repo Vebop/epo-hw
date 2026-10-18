@@ -4,33 +4,46 @@ let plastic: CeramicType = {
   id: "plastic",
   stageName: "Plastic",
   stageOrder: 1,
-  description: "",
+  description: "Fresh clay ready to be used.",
   hydration: 20,
   duration: 5,
   phase: "greenware",
   temperature: 1000,
   shrinkage: 0,
-  blurb: ""
+  blurb: "Fresh clay from the bag, sitting on your shelf. You can see the condensation on the inside of the bag, and press your thumb to make an imprint on its rectangular surface.",
 };
 
 let wedging: CeramicType = {
   id: "wedging",
   stageName: "Wedging",
+  description: "Preparing the clay for throwing or handbuilding.",
   stageOrder: 2,
-  description: "",
   hydration: 20,
   duration: 5,
   phase: "greenware",
   temperature: 1000,
   shrinkage: 0,
-  blurb: ""
+  blurb: "Shaping your fresh clay into a shape to throw. If handbuilding, you can skip this stage. If you are using clay you have previously worked with this step can help wake up the clay and make the texture and moisture level more uniform again, removing impurities.",
 };
 
 let throwing: CeramicType = {
     id: "throwing",
     stageName: "Throwing",
     stageOrder: 3,
-    description: "",
+    description: "Forming the clay on a potter's wheel.",
+    hydration: 20,
+    duration: 5,
+    phase: "greenware",
+    temperature: 1000,
+    shrinkage: 0,
+    blurb: ""
+};
+
+let handbuilding: CeramicType = {
+    id: "handbuilding",
+    stageName: "Handbuilding",
+    stageOrder: 4,
+    description: "Creating and joining slabs, coils, to form a piece by hand.",
     hydration: 20,
     duration: 5,
     phase: "greenware",
@@ -42,8 +55,8 @@ let throwing: CeramicType = {
 let leatherhard: CeramicType = {
     id: "leatherhard",
     stageName: "Leatherhard",
-    stageOrder: 4,
-    description: "",
+    stageOrder: 5,
+    description: "Clay that is partially dried and still somewhat pliable.",
     hydration: 20,
     duration: 5,
     phase: "greenware",
@@ -55,8 +68,8 @@ let leatherhard: CeramicType = {
 let drying: CeramicType = {
     id: "drying",
     stageName: "Drying",
-    stageOrder: 5,
-    description: "",
+    stageOrder: 6,
+    description: "Slowly dry the form to avoid structural failures.",
     hydration: 20,
     duration: 5,
     phase: "greenware",
@@ -68,11 +81,11 @@ let drying: CeramicType = {
 let bisque: CeramicType = {
     id: "bisque",
     stageName: "Bisque",
-    stageOrder: 6,
-    description: "",
+    stageOrder: 7,
+    description: "First firing to convert greenware to bisque.",
     hydration: 20,
     duration: 5,
-    phase: "bisque",
+    phase: "bisqueware",
     temperature: 1000,
     shrinkage: 0,
     blurb: ""
@@ -81,11 +94,11 @@ let bisque: CeramicType = {
 let glaze: CeramicType = {
     id: "glaze",
     stageName: "Glaze",
-    stageOrder: 7,
-    description: "",
+    stageOrder: 8,
+    description: "Apply decoration or glaze to the bisque fired piece.",
     hydration: 20,
     duration: 5,
-    phase: "glaze",
+    phase: "bisqueware",
     temperature: 1000,
     shrinkage: 0,
     blurb: ""
@@ -94,20 +107,23 @@ let glaze: CeramicType = {
 let firing: CeramicType = {
     id: "firing",
     stageName: "Firing",
-    stageOrder: 8,
-    description: "",
+    stageOrder: 9,
+    description: "Cone 10 firing.",
     hydration: 20,
     duration: 5,
-    phase: "firing",
+    phase: "firing-stoneware",
     temperature: 1000,
     shrinkage: 0,
     blurb: ""
 };
 
+// Add earthenware, porcelain, and finalized stoneware stages later.
+
 export const phases: CeramicType[] = [
   plastic,
   wedging,
   throwing,
+  handbuilding,
   leatherhard,
   drying,
   bisque,
