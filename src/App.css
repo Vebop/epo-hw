@@ -31,6 +31,7 @@
    justify-content: center;
    background-color: var(--color-background-clay);
    padding: 3rem;
+   align-items: center;
  }
 
  .narrative-panel {
@@ -61,6 +62,10 @@
     padding: 2rem;
     background-color: var(--color-background-clay);
     transition: background-color 0.8s ease-out, box-shadow 0.8s ease-out;
+    max-width: 420px;
+    border-radius: 20%;
+    align-self: center;
+
  }
 
  .ceramic-visual dl {

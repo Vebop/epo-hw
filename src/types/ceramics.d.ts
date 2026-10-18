@@ -4,7 +4,8 @@ export interface CeramicType {
   stageOrder: number;
   description: string;
   hydration: number;
-  duration: number;
+  duration: string | number;
+  scrollDuration: number;
   phase: string;
   temperature: number;
   shrinkage: number;
