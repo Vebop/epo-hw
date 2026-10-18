@@ -74,7 +74,9 @@ export default defineConfig([
 
 ```
 
+https://ceramicinfospot.com/what-is-greenware-in-ceramics-the-stages-of-clay-explained/
 
 https://ceramicinfospot.com/how-to-prepare-clay-for-throwing-the-complete-wedging-guide/
 
 https://openlearning.aalto.fi/pluginfile.php/93249/mod_resource/content/1/From%20Clay%20to%20Ceramics%20Aalto%202021.pdf
+
