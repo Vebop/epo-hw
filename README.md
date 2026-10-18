@@ -20,6 +20,8 @@ I had the vision of walking into my ceramics studio, focusing in on the differen
 
 ## Current Status
 
+To view one possibly recent version of this app see [the screen recording in the repository.](./screen-clip-app.mov)
+
 Due to the limitations of reality, this web app has not yet fulfilled its potential ideated above. We currently stand at a two panel scrolly telling web app with a metrics section to the left, and placeholder cards scrolling by on the right.
 
 Considering the bullets listed above, this web app
