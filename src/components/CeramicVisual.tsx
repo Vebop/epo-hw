@@ -21,7 +21,12 @@ function CeramicVisual({ceramic}: {ceramic: CeramicType}) {
         <dt>Temperature:</dt>
         <dd>{ceramic.temperature} °C</dd>
         <dt>Shrinkage:</dt>
-        <dd>{ceramic.shrinkage}%</dd>
+        <dd>{ceramic.shrinkage}%
+            <div shrink-track className="shrinkage-icon">
+                <div shrunk-fill className="shrinkage-fill" style={{transform: `scale(${(100-ceramic.shrinkage)/100})`}}>
+                </div>
+             </div>
+        </dd>
       </dl>
       <p>{ceramic.blurb}</p>
     </section>

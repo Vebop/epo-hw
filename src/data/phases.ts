@@ -61,7 +61,7 @@ let leatherhard: CeramicType = {
     duration: 5,
     phase: "greenware",
     temperature: 1000,
-    shrinkage: 0,
+    shrinkage: 5,
     blurb: ""
 };
 
@@ -74,7 +74,7 @@ let drying: CeramicType = {
     duration: 5,
     phase: "greenware",
     temperature: 1000,
-    shrinkage: 0,
+    shrinkage: 8,
     blurb: ""
 };
 
@@ -87,7 +87,7 @@ let bisque: CeramicType = {
     duration: 5,
     phase: "bisqueware",
     temperature: 1000,
-    shrinkage: 0,
+    shrinkage: 10,
     blurb: ""
 };
 
@@ -100,7 +100,7 @@ let glaze: CeramicType = {
     duration: 5,
     phase: "bisqueware",
     temperature: 1000,
-    shrinkage: 0,
+    shrinkage: 10,
     blurb: ""
 };
 
@@ -113,7 +113,7 @@ let firing: CeramicType = {
     duration: 5,
     phase: "firing-stoneware",
     temperature: 1000,
-    shrinkage: 0,
+    shrinkage: 15, //4-15%
     blurb: ""
 };
 
