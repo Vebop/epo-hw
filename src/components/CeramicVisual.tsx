@@ -25,7 +25,7 @@ function CeramicVisual({ceramic}: {ceramic: CeramicType}) {
             </div>
         </dd>
         <dt>Duration:</dt>
-        <dd>{ceramic.duration} hours</dd>
+        <dd>{ceramic.duration}</dd>
         <dt>Phase:</dt>
         <dd>{ceramic.phase}</dd>
         <dt>Temperature:</dt>
