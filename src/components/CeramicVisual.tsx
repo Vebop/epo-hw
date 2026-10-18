@@ -2,8 +2,18 @@
 import type { CeramicType } from '../types/ceramics';
 
 function CeramicVisual({ceramic}: {ceramic: CeramicType}) {
+    let temperatureColor = "var(--color-kiln-cold)"; // default color for low temperature
+    let boxShadow = "none";
+
+    if (ceramic.temperature >= 1000 && ceramic.temperature < 1300) {
+        temperatureColor = "var(--color-kiln-warm)";
+    } else if (ceramic.temperature >= 1300) {
+        temperatureColor = "var(--color-kiln-hot)";
+        boxShadow = "var(--color-kiln-glow-hot)";
+    }
+
   return (
-    <section className="ceramic-visual">
+    <section className="ceramic-visual" style={{backgroundColor: temperatureColor, boxShadow: boxShadow}}>
       <h2>{ceramic.stageName}</h2>
       <p>{ceramic.description}</p>
       <dl>

@@ -8,7 +8,7 @@ let plastic: CeramicType = {
   hydration: 22, //17-23%
   duration: 5,
   phase: "greenware",
-  temperature: 1000,
+  temperature: 25,
   shrinkage: 0,
   blurb: "Fresh clay from the bag, sitting on your shelf. You can see the condensation on the inside of the bag, and press your thumb to make an imprint on its rectangular surface.",
 };
@@ -21,7 +21,7 @@ let wedging: CeramicType = {
   hydration: 20, //17-23%
   duration: 5,
   phase: "greenware",
-  temperature: 1000,
+  temperature: 25,
   shrinkage: 0,
   blurb: "Shaping your fresh clay into a shape to throw. If handbuilding, you can skip this stage. If you are using clay you have previously worked with this step can help wake up the clay and make the texture and moisture level more uniform again, removing impurities.",
 };
@@ -34,7 +34,7 @@ let throwing: CeramicType = {
     hydration: 21, //20-22%
     duration: 5,
     phase: "greenware",
-    temperature: 1000,
+    temperature: 25,
     shrinkage: 0,
     blurb: ""
 };
@@ -47,7 +47,7 @@ let handbuilding: CeramicType = {
     hydration: 19, //18-20%
     duration: 5,
     phase: "greenware",
-    temperature: 1000,
+    temperature: 25,
     shrinkage: 0,
     blurb: ""
 };
@@ -60,7 +60,7 @@ let leatherhard: CeramicType = {
     hydration: 14, //12-15%
     duration: 5,
     phase: "greenware",
-    temperature: 1000,
+    temperature: 25,
     shrinkage: 5,
     blurb: ""
 };
@@ -73,7 +73,7 @@ let drying: CeramicType = {
     hydration: 5,
     duration: 5,
     phase: "greenware",
-    temperature: 1000,
+    temperature: 20,
     shrinkage: 8,
     blurb: ""
 };
@@ -99,7 +99,7 @@ let glaze: CeramicType = {
     hydration: 3, //2-4%
     duration: 5,
     phase: "bisqueware",
-    temperature: 1000,
+    temperature: 25,
     shrinkage: 10,
     blurb: ""
 };
@@ -112,7 +112,7 @@ let firing: CeramicType = {
     hydration: 0,
     duration: 5,
     phase: "firing-stoneware",
-    temperature: 1000,
+    temperature: 1300,
     shrinkage: 15, //4-15%
     blurb: ""
 };
