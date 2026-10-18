@@ -54,3 +54,6 @@ https://ceramicinfospot.com/how-to-prepare-clay-for-throwing-the-complete-wedgin
 
 https://openlearning.aalto.fi/pluginfile.php/93249/mod_resource/content/1/From%20Clay%20to%20Ceramics%20Aalto%202021.pdf
 
+## License
+
+This work is licensed under No License. This work is copyrighted by me, Vebop, the author.
