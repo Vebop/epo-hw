@@ -83,7 +83,6 @@
 
  .ceramic-visual dd {
    margin: 0;
-   /*text-align: right;*/
  }
 
  .ceramic-visual dt {
@@ -125,4 +124,19 @@
     background-color: var(--color-shrinkage-fill);
     border-radius: 50%;
     transition: transform 0.8s ease-out;
+ }
+
+/* Reduce transition time to 0 for reducing motion */
+ @media (prefers-reduced-motion: reduce) {
+  .ceramic-visual {
+    transition: background-color 0s ease-out, box-shadow 0s ease-out;
+  }
+
+  .hydration-fill {
+   transition: width 0s ease-out;
+ }
+
+ .shrinkage-fill{
+  transition: transform 0s ease-out;
+ }
  }
