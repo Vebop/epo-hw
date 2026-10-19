@@ -14,6 +14,10 @@ The requirements of this demo are as follows:
     - Use of WebGL 3D visualizations, the code of which being written by you and contained in your codebase (no third party/iframe content)
     - Use of Next.js v15
 
+## Run
+
+Clone this repository using `git clone https://github.com/vebop/epo-hw.git` and run `npm run dev` in your terminal to get a quick working version of this webapp.
+
 ## Initial Idea
 
 I had the vision of walking into my ceramics studio, focusing in on the different tasks that I do when I arrive, and how I spend my time. Along with these visuals (as if there was a go-pro on my forehead) the user would see the status of the clay in many different ways. I was originally considering having direction and guidance along with references to videos and other educational material for each step of the clay-making process. I imagined this web app would be a stepping off point to learn about each phase.
